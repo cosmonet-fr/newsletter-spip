@@ -1,0 +1,20 @@
+<paquet
+        prefix="news"
+        categorie="outil"
+        version="1.0.0"
+        schema="1.0.1"
+        etat="dev"
+        compatibilite="[3.0.0;["
+        logo="images/vertebres-32.png"
+>
+
+    <nom>Newsletter</nom>
+
+
+    <auteur>Stephane Billois</auteur>
+
+    <pipeline nom="recuperer_fond" inclure="news_pipelines.php" />
+    <pipeline nom="declarer_tables_principales" inclure="base/news.php" />
+
+    <utilise nom="necessite" compatibilite="[3.0.0;["/>
+</paquet>

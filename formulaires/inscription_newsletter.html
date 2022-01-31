@@ -1,0 +1,10 @@
+<div class="formulaire_spip formulaire_#ENV{action}">
+
+    <form action="#ENV{action}" method="post"><div>
+        #ACTION_FORMULAIRE{#ENV{action}}
+        #GENERER_SAISIES{#ENV{_saisies}}
+        <p class="boutons"><input type="submit" class="submit" value="<:pass_ok:>" /></p>
+    </div></form>
+    [<p style="color: white; background-color: red;" >(#ENV{message_erreur})</p>]
+    [<p style="color: white; background-color: green;" >(#ENV{message_ok})</p>]
+</div>
